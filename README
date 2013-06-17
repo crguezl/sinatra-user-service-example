@@ -1,4 +1,6 @@
-Esta aplicación consiste en un servicio web que implementa una API de usuarios que responde a peticiones HTTP para escribir, leer, modificar o borrar datos.
+Esta aplicación consiste en un servicio web que implementa una API
+de usuarios que responde a peticiones HTTP para escribir, leer,
+modificar o borrar datos.
 
 * rake db:migrate
 
