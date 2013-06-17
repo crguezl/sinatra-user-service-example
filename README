@@ -1,0 +1,7 @@
+Esta aplicación consiste en un servicio web que implementa una API de usuarios que responde a peticiones HTTP para escribir, leer, modificar o borrar datos.
+
+* rake db:migrate
+
+* Una buena forma de tener datos con los que probar es arrancar el
+  servidor en el entorno test y en service.rb comprobar que si 
+  env == ‘test’ se cree algún usuario a modo de fixture.
