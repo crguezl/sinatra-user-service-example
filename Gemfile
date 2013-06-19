@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'ruby-debug19'
 # service
 gem 'activerecord'
 gem 'sqlite3'

@@ -3,6 +3,7 @@ ENV['SINATRA_ENV'] = 'test'
 require_relative '../service.rb'
 require 'rspec'
 require 'rack/test'
+require 'ruby-debug'
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
@@ -28,6 +29,7 @@ describe 'service' do
 
     it 'should return a user by name' do
       get '/api/v1/users/paul'
+      #debugger
       last_response.should be_ok
       attributes = JSON.parse(last_response.body)['user']
       attributes['name'].should == 'paul'
